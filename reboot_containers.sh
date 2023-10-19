@@ -20,9 +20,9 @@ F 128.8.238.82
 H 128.8.238.215
 B 128.8.238.33
 E 128.8.238.10
-A 128.8.238.15" > free_ip_file.txt
-rm not_free_ip_file.txt
-touch not_free_ip_file.txt
+A 128.8.238.15" > /home/student/free_ip_file.txt
+rm /home/student/not_free_ip_file.txt
+touch /home/student/not_free_ip_file.txt
 
 # clear crontab and add moveIP back in
 sudo crontab -r
