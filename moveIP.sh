@@ -12,7 +12,7 @@ then
   exit 1
 fi
 
-random_number=$((1 + RANDOM % "$current_lines"))
+random_number=$(shuf -i 1-"$current_lines" -n 1)
 
 # moving the line corresponding to the random number to not_free_ip_file
 sed -n "${random_number},${random_number}p" /home/student/free_ip_file.txt >> /home/student/not_free_ip_file.txt
